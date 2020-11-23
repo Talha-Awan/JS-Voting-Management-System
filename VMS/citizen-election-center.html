@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voting Page</title>
+		<link rel="stylesheet" href="./css/modern-business.css" />
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<body onload="loading()">
+		<nav
+			class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">V.M.S</a>
+				<button
+					class="navbar-toggler navbar-toggler-right"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarResponsive"
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="./all-elections-citizens.html"
+								>All Elections</a
+							>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="./citizen-profile.html"
+								>Citizen Profile</a
+							>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="./citizen-login.html"
+								>Logout</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br />
+		<br />
+		<h1 class="text-center">Cast your Vote</h1>
+		<br />
+		<hr />
+		<br />
+		<div class="container">
+			<div class="row" id="electionContent"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-12" id="submitArea"></div>
+			</div>
+		</div>
+
+		<script src="./js/vote-cast.js"></script>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

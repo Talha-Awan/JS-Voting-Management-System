@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Election</title>
+		
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Custom styles for this template -->
+		<link href="css/modern-business.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav
+			class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="index.html">VMS</a>
+				<button
+					class="navbar-toggler navbar-toggler-right"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarResponsive"
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html"
+								>Services</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="./super-admin-login.html"
+								>Logout</a
+							>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<br />
+		<h1 class="text-center">Election Creation Form</h1>
+		<br />
+		<div class="container">
+			<form class="create-election" onsubmit="">
+				<div class="form-group">
+					<label for="inputPosition">Election Name </label>
+					<select id="inputPosition" class="form-control e_type">
+						<option value="-1" selected disabled>Choose...</option>
+						<option value="Mayor">Mayor</option>
+						<option value="Governor">Governor</option>
+						<option value="Speaker">Speaker</option>
+						<option value="Others">Senator</option>
+						<option value="Others">MNA</option>
+						<option value="Others">MPA</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="inputStartDate">Start Date</label>
+					<input
+						type="date"
+						class="form-control e_sdate"
+						id="inputStartDate"
+						placeholder="Start Date"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="inputEndDate">End Date</label>
+					<input
+						type="date"
+						class="form-control e_edate"
+						id="inputEndDate"
+						placeholder="End Date"
+					/>
+                </div>
+                <!-- <div class="form-group">
+					<label for="inputStatus">Status </label>
+					<select id="inputStatus" class="form-control e_status">
+						<option value="-1" selected disabled>Choose...</option>
+                        <option value="Open">Open</option>
+                        <option value="Closed">Closed</option>
+                        <option value="Pending">Pending</option>
+					</select>
+				</div> -->
+				<div class="form-row d-flex justify-content-center">
+					<input type="submit" class="btn btn-primary" />
+				</div>
+			</form>
+		</div>
+		<br />
+
+		<script src="./js/create-election.js"></script>
+		<script>
+			form.addEventListener("submit", function () {
+				// event.preventDefault();
+				addElection(elecType.value, elecSDate.value, elecEDate.value);
+				alert("Election Created!");
+			});
+		</script>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

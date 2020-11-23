@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add Admin Page</title>
+		<!-- <link rel="stylesheet" href="./css/upload-image.css" /> -->
+		
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<br />
+		<h1 class="text-center">Add Admin Officer</h1>
+		<br />
+		<!-- <div class="profile-pic-div">
+			<img src="./images/dp.jpg" id="photo" />
+			<input type="file" id="file" />
+			<label for="file" id="uploadBtn">Choose Photo</label>
+        </div> -->
+		<div class="container">
+			<form class="add-admin-officer" onsubmit="">
+				<div class="form-row d-flex justify-content-center">
+					<div class="form-group col-6">
+						<label for="inputEmail4">Username</label>
+						<input
+							type="text"
+							class="form-control ao_username"
+							id="inputtext"
+							placeholder="Username"
+							onkeyup="validateWS(this.value);"
+							required
+						/>
+					</div>
+				</div>
+				<div class="form-row d-flex justify-content-center">
+					<div class="form-group col-6">
+						<label for="inputPassword">Password</label>
+						<input
+							type="password"
+							class="form-control ao_password"
+							id="inputPassword"
+							placeholder="Password"
+							onkeyup="validateWS(this.value);"
+							required
+						/>
+					</div>
+				</div>
+				<div class="form-row d-flex justify-content-center">
+					<input type="submit" class="btn btn-primary btn-block" value="Add" />
+				</div>
+			</form>
+		</div>
+		<br />
+		<script src="./js/admin-officer-insert.js"></script>
+		<script>
+			form.addEventListener("submit", function (event) {
+				event.preventDefault();
+				addAdminOfficer(username.value, password.value);
+				alert("Success");
+			});
+		</script>
+		<!-- <script src="./js/imgstyle.js"></script> -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

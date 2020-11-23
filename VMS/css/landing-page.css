@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	/* margin: 0;
+    padding: 0; */
+	font-family: "Roboto";
+}
+/* 
+.header {
+    height: 100vh;
+} */
+
+.navbar-style {
+	/* background: #111111; */
+	box-shadow: 0 5px 10px #efefef;
+	text-transform: uppercase;
+}
+
+/* .navbar-toggler-icon {
+    background: #01411C !important;
+} */
+/* a {
+   color: #ffffff;
+} */
+
+li a {
+	color: black;
+}
+
+li a:hover {
+	color: #0275d8;
+}
+
+.imgRes {
+	width: 100%;
+	height: 100%;
+	/* border-radius: 10px; */
+}
+
+.big-text {
+	font-size: 52px;
+	margin: 20px 0;
+	color: #0275d8;
+	font-weight: bold;
+}
+
+a.btn {
+	margin: 1px;
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+a.btn-first {
+	background-color: #0275d8;
+	color: #fff;
+}
+
+a.btn-second {
+	background: transparent;
+	border: 1px solid #0275d8;
+	margin-bottom: 1px;
+}
+
+a.btn-first:hover {
+	background: #ffffff;
+	border: none;
+	color: #0275d8;
+	box-shadow: 5px 5px 10px #999;
+	transition: 0.3s;
+}
+
+a.btn-second:hover {
+	background: #0275d8;
+	border: none;
+	color: #fff;
+	box-shadow: 5px 5px 10px #999;
+	transition: 0.3s;
+}
+
+/* , .banner-image */
+.banner-info {
+	/* ,.banner-image { */
+	margin: 100px 0;
+}
+
+.contfront{
+    padding: 60px;
+}
+
+.contFeat{
+    padding: 30px;
+}
+
+/* @media only screen and (min-width: 768px){ */
+/* .md-mb-30 {
+		margin-bottom: 30px;
+	}
+	#aboutpage,
+	#blogpage,
+	#contactpage,
+	#servicespage {
+		padding-top: 50px !important;
+    } */
+/* .imgRes{ */
+/* max-width: 100%;  */
+/* max-width: 30%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+} */
+
+/* .fun-facts {
+	margin-top: 140px;
+	background-image: url(../images/getty-vote_800_109440073-56a71e943df78cf772927c54-1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 140px 0px;
+    color: #fff; */
+/* width: 100%;
+    height: 100%;
+    opacity: 0.7; */
+/* } */
+
+.fun-facts {
+    margin-top: 80px;
+    margin-top: 60px;
+	background-image: url(../images/slide_01.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 140px 0px;
+	color: #fff;
+	/* background-color: black; */
+	/* opacity: 0.8; */
+	z-index: 1;
+}
+
+/* .fun-facts .overlay{
+    position: absolute;
+    top: 652px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 1;
+} */
+
+.card-body {
+	background-color: #f7f7f7;
+}
+
+.count-area-content {
+	text-align: center;
+	background-color: rgba(250, 250, 250, 0.1);
+	padding: 25px 30px 35px 30px;
+	margin: 15px 0px;
+}
+
+.count-digit {
+	margin: 5px 0px;
+	color: #0275d8;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.count-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 0.5px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<link rel="stylesheet" href="./css/citizen-login-register-page.css" />
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="global-container">
+			<div class="card login-form">
+				<div class="card-body">
+					<h3 class="card-title text-center">Admin Login</h3>
+					<div class="card-text">
+						<!-- 						
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+						<form class="admin-login">
+							<!-- to error: add class "has-danger" -->
+							<div class="form-group">
+								<label for="usernameInput">Username</label>
+								<input
+									type="text"
+									class="form-control form-control-sm al_username"
+									id="usernameInput"
+									aria-describedby="usernameHelp"
+									min="1"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="passwordInput">Password</label>
+								<input
+									type="password"
+									class="form-control form-control-sm al_password"
+									id="passwordInput"
+									aria-describedby="passwordHelp"
+									required
+								/>
+							</div>
+							<input
+								type="submit"
+								class="btn btn-primary btn-block"
+								value="Sign in"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/admin-login.js"></script>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

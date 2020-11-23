@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<link rel="stylesheet" href="./css/citizen-login-register-page.css" />
+		
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="global-container">
+			<div class="card login-form">
+				<div class="card-body">
+					<h3 class="card-title text-center">Citizen Login</h3>
+					<div class="card-text">
+						<!--
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+						<form class="citizen-login">
+							<!-- to error: add class "has-danger" -->
+							<div class="form-group">
+								<label for="cnicInput">C.N.I.C</label>
+								<input
+									type="number"
+									class="form-control form-control-sm"
+									id="cnicInput"
+									aria-describedby="cnicHelp"
+									min="1"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<label for="passwordInput">Password</label>
+								<input
+									type="password"
+									class="form-control form-control-sm"
+									id="passwordInput"
+									aria-describedby="passwordHelp"
+									required
+								/>
+							</div>
+							<input
+								type="submit"
+								class="btn btn-primary btn-block"
+								value="Signin"
+							/>
+							<div class="sign-up">
+								Don't have an account?
+								<a href="./citizen-register.html">Create One</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/citizen-insert.js"></script>
+		<script>
+			// const loginForm = document.querySelector(".citizen-login");
+			// const loginUname = document.getElementById("cnicInput");
+			// const loginPass = document.getElementById("passwordInput");
+
+			loginForm.addEventListener("submit", function () {
+				event.preventDefault();
+				login(loginUname.value, loginPass.value);
+			});
+
+			// display();
+			// let access = "false";
+			// let cit;
+			// function login(id, pass) {
+			// 	for (let i = 0; i < citizenArr.length; i++) {
+			// 		if (
+			// 			citizenArr[i].cnic == id &&
+			// 			citizenArr[i].password == pass
+			// 		) {
+			// 			access = "true";
+			// 			cit = citizenArr[i];
+			// 			// flag_value = "You are " + role;
+			// 			console.log(citizenArr[i]);
+			// 			break;
+			// 		}
+			// 		else {
+			// 			access = "false";
+			// 		}
+			// 	}
+			// 	if (access == "true") {
+			// 		alert("Success!");
+			// 		window.sessionStorage.setItem("citizenSession", JSON.stringify(cit));
+			// 		location.href = "all-elections-citizens.html";
+			// 	} else {
+			// 		alert("Invalid Credentials! Please Try Again!");
+			// 	}
+			// }
+		</script>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
